@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ópticas Devlyn El Salvador</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="nombre">ÓPTICAS DEVLYN</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#carrito">Carrito 🛒</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="inicio">
+        <h2>Bienvenido a Ópticas Devlyn El Salvador</h2>
+        <p>Tu mejor opción en lentes y accesorios ópticos de calidad. Agenda citas, explora nuestro catálogo y disfruta de la comodidad de comprar en línea con la opción de pago contra entrega.</p>
+    </section>
+    
+    <section id="productos">
+        <h2>Nuestros Productos</h2>
+        <div class="producto">
+            <img src="img/producto.jpg" alt="Aros Elegantes">
+            <p>Lentes - $100</p>
+            <button onclick="agregarAlCarrito('Lentes', 50)">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="img/producto1.jpg" alt="Lentes de sol">
+            <p>Lentes de sol - $50</p>
+            <button onclick="agregarAlCarrito('Lentes de sol', 50)">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="img/producto2.jpg" alt="Lentes de Contacto">
+            <p>Lentes de Contacto - $50</p>
+            <button onclick="agregarAlCarrito('Lentes de contacto', 50)">Agregar al carrito</button>
+        </div>
+    </section>
+    
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form>
+            <input type="text" placeholder="Nombre" required>
+            <input type="email" placeholder="Correo Electrónico" required>
+            <textarea placeholder="Mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    
+    <section id="carrito">
+        <h2>Carrito de Compras</h2>
+        <ul id="lista-carrito"></ul>
+        <p>Total: $<span id="total">0</span></p>
+    </section>
+    
+    <script src="script.js"> </script>
+</body>
+</html>
